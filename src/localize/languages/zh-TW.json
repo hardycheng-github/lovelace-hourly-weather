@@ -1,0 +1,78 @@
+{
+  "common": {
+    "version": "版本",
+    "title": "每小時天氣",
+    "title_card": "每小時天氣卡片",
+    "description": "一個用於顯示每小時天氣狀況的卡片。",
+    "invalid_configuration": "無效的設定"
+  },
+  "editor": {
+    "entity": "實體（必填）",
+    "name": "名稱（選填）",
+    "segments_to_show": "顯示的預測段數（選填）",
+    "offset": "開始的預測段偏移數（選填）",
+    "icons": "顯示圖示而非文字標籤",
+    "label_spacing": "時間和溫度標籤的預測段間距數（選填）",
+    "show_wind": "顯示風速與風向",
+    "show_date": "顯示日期",
+    "show_precipitation_amounts": "顯示降雨量",
+    "show_precipitation_probability": "顯示降雨機率",
+    "none": "無",
+    "speed_and_direction": "速度與方向",
+    "speed_only": "僅顯示速度",
+    "direction_only": "僅顯示方向",
+    "barb": "風向圖示",
+    "barb_and_speed": "風向圖示與速度",
+    "barb_and_direction": "風向圖示與方向",
+    "barb_speed_and_direction": "風向圖示、速度與方向",
+    "all": "全部",
+    "on_day_boundaries": "在日期邊界上"
+  },
+  "errors": {
+    "missing_entity": "設定中缺少實體",
+    "too_many_segments_requested": "在num_segments中請求的預測段過多。必須 <= 預測實體中的段數。",
+    "must_be_int": "必須是大於或等於2的偶數",
+    "invalid_colors": "設定中的以下顏色無效：",
+    "must_be_positive_int": "必須是正整數",
+    "offset_must_be_positive_int": "偏移必須是正整數",
+    "forecast_not_available": "預測不可用",
+    "check_entity": "檢查設定的預測實體。",
+    "no_wind_barbs_with_string_bearing": "當天氣實體使用文字表達風向時，不支援風向圖示。",
+    "invalid_value_icon_fill": "icon_fill 必須是正整數，或是'single'或'full'之一"
+  },
+  "conditions": {
+    "clear": "晴朗",
+    "cloudy": "多雲",
+    "fog": "霧",
+    "hail": "冰雹",
+    "thunderstorm": "雷雨",
+    "partlyCloudy": "局部多雲",
+    "heavyRain": "大雨",
+    "rain": "雨",
+    "snow": "雪",
+    "mixedPrecip": "雨雪混合",
+    "sunny": "晴天",
+    "windy": "有風"
+  },
+  "direction": {
+    "n": "北",
+    "nne": "北偏東",
+    "ne": "東北",
+    "ene": "東偏北",
+    "e": "東",
+    "ese": "東偏南",
+    "se": "東南",
+    "sse": "南偏東",
+    "s": "南",
+    "ssw": "南偏西",
+    "sw": "西南",
+    "wsw": "西偏南",
+    "w": "西",
+    "wnw": "西偏北",
+    "nw": "西北",
+    "nnw": "北偏西"
+  },
+  "card": {
+    "chance_of_precipitation": "{0}%的降雨機率"
+  }
+}

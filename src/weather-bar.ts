@@ -6,7 +6,7 @@ import { LABELS, ICONS } from "./conditions";
 import { getWindBarbSVG } from "./lib/svg-wind-barbs";
 import type { ColorMap, ConditionSpan, SegmentTemperature, SegmentWind, SegmentPrecipitation, WindType, ShowDateType, IconFillType } from "./types";
 
-const tippyStyles: string = process.env.TIPPY_CSS || '';
+const tippyStyles: string = process.env.TIPPY_CSS;
 
 export class WeatherBar extends LitElement {
   @property({ type: Array })
@@ -217,23 +217,23 @@ export class WeatherBar extends LitElement {
   }
 
   static styles = [unsafeCSS(tippyStyles), css`
-    .main {
-      --color-clear-night: #111;
-      --color-cloudy: #777777;
-      --color-fog: var(--color-cloudy);
-      --color-hail: #2b5174;
-      --color-lightning: var(--color-rainy);
-      --color-lightning-rainy: var(--color-rainy);
-      --color-partlycloudy: #b3dbff;
-      --color-pouring: var(--color-rainy);
-      --color-rainy: #44739d;
-      --color-snowy: white;
-      --color-snowy-rainy: var(--color-partlycloudy);
-      --color-sunny: #90cbff;
-      --color-windy: var(--color-sunny);
-      --color-windy-variant: var(--color-sunny);
-      --color-exceptional: #ff9d00;
-    }
+	.main {
+	  --color-clear-night: #FFA500;
+	  --color-cloudy: #696969;
+	  --color-fog: #708090;
+	  --color-hail: #4682B4;
+	  --color-lightning: #FF4500;
+	  --color-lightning-rainy: #B22222;
+	  --color-partlycloudy: #CD853F;
+	  --color-pouring: #1E90FF;
+	  --color-rainy: #4169E1;
+	  --color-snowy: #B0C4DE;
+	  --color-snowy-rainy: #6495ED;
+	  --color-sunny: #FFA500;
+	  --color-windy: #20B2AA;
+	  --color-windy-variant: #5F9EA0;
+	  --color-exceptional: #DC143C;
+	}
     .bar {
       height: 30px;
       width: 100%;

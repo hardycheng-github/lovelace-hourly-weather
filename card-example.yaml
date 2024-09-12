@@ -1,0 +1,59 @@
+type: custom:hourly-weather
+entity: weather.opencwb
+icons: true
+num_segments: '8'
+label_spacing: '1'
+round_temperatures: true
+hide_temperatures: false
+hide_hours: false
+offset: 0
+show_date: boundary
+show_precipitation_amounts: false
+show_precipitation_probability: true
+name: 逐時預報
+colors:
+  clear-night:
+    background: '#FFA500'
+    foreground: '#FFFFFF'
+  cloudy:
+    background: '#696969'
+    foreground: '#FFFFFF'
+  fog:
+    background: '#708090'
+    foreground: '#FFFFFF'
+  hail:
+    background: '#4682B4'
+    foreground: '#FFFFFF'
+  lightning:
+    background: '#FF4500'
+    foreground: '#FFFFFF'
+  lightning-rainy:
+    background: '#B22222'
+    foreground: '#FFFFFF'
+  partlycloudy:
+    background: '#CD853F'
+    foreground: '#FFFFFF'
+  pouring:
+    background: '#1E90FF'
+    foreground: '#FFFFFF'
+  rainy:
+    background: '#4169E1'
+    foreground: '#FFFFFF'
+  snowy:
+    background: '#B0C4DE'
+    foreground: '#FFFFFF'
+  snowy-rainy:
+    background: '#6495ED'
+    foreground: '#FFFFFF'
+  sunny:
+    background: '#FFA500'
+    foreground: '#FFFFFF'
+  windy:
+    background: '#20B2AA'
+    foreground: '#FFFFFF'
+  windy-variant:
+    background: '#5F9EA0'
+    foreground: '#FFFFFF'
+  exceptional:
+    background: '#DC143C'
+    foreground: '#FFFFFF'

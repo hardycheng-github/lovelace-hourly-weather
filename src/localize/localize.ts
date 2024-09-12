@@ -15,6 +15,7 @@ import * as pt_BR from './languages/pt-BR.json';
 import * as ru from './languages/ru.json';
 import * as sk from './languages/sk.json';
 import * as zh from './languages/zh.json';
+import * as zh_TW from './languages/zh-TW.json'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const languages: any = {
@@ -35,6 +36,7 @@ const languages: any = {
   ru,
   sk,
   zh,
+  zh_TW
 };
 
 export function getLocalizer(configuredLanguage: string | undefined, haServerLanguage: string | undefined) {
